@@ -3,11 +3,16 @@
 ## Table of Contents
 
 - [Technical Task - Cron Expression Parser](#technical-task---cron-expression-parser)
-  - [Launch the app](#launch-the-app)
-    1. [Clone the repository and navigate to the project folder](#1-clone-the-repository-and-navigate-to-the-project-folder)
-    2. [Run the Application](#2-run-the-application)
-  - [Run Tests](#run-tests)
+    - [Prerequisites](#prerequisites)
+    - [Launch the app](#launch-the-app)
+        1. [Clone the repository and navigate to the project folder](#1-clone-the-repository-and-navigate-to-the-project-folder)
+        2. [Run the Application](#2-run-the-application)
+    - [Run Tests](#run-tests)
 
+Write a command line application or script which parses a cron string and expands each field to show the times at which
+it will run. You may use whichever language you feel most comfortable with.
+You should only consider the standard cron format with five time fields (minute, hour, day of month, month, and day of
+week) plus a command,
 
 Write a command line application or script which parses a cron string and expands each field to show the times at which
 it will run. You may use whichever language you feel most comfortable with.
@@ -59,6 +64,22 @@ feel would be relevant for them to ramp up quickly, such as **unit/acceptance te
 to
 run your project in a clean macOS/Linux environment.
 
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- You have a working Python 3+ installation on your machine.
+
+If Python is not installed, you can download it from the official Python website:
+
+- [Download Python](https://www.python.org/downloads/)
+
+You can check your Python version by opening a terminal and running the following command:
+
+```bash
+python --version
+```
+
 ## Launch the app
 
 1. Clone the repository and navigate to the project folder:
@@ -81,6 +102,7 @@ python main.py "*/15 0 1,15 * 1-5 /usr/bin/find"
 ```
 
 Output example:
+
 ```
 minute         0 15 30 45
 hour           0
