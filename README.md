@@ -1,5 +1,14 @@
 ## Technical Task - Cron Expression Parser
 
+## Table of Contents
+
+- [Technical Task - Cron Expression Parser](#technical-task---cron-expression-parser)
+  - [Launch the app](#launch-the-app)
+    1. [Clone the repository and navigate to the project folder](#1-clone-the-repository-and-navigate-to-the-project-folder)
+    2. [Run the Application](#2-run-the-application)
+  - [Run Tests](#run-tests)
+
+
 Write a command line application or script which parses a cron string and expands each field to show the times at which
 it will run. You may use whichever language you feel most comfortable with.
 You should only consider the standard cron format with five time fields (minute, hour, day of month, month, and day of
@@ -50,10 +59,39 @@ feel would be relevant for them to ramp up quickly, such as **unit/acceptance te
 to
 run your project in a clean macOS/Linux environment.
 
-
 ## Launch the app
 
-1. Clone the repository:
+1. Clone the repository and navigate to the project folder:
+
 ```bash
 git clone https://github.com/joerude/cron-expression-parser.git
+cd cron-expression-parser
+```
+
+2. Run the Application:
+
+```bash
+python main.py "<cron_expression>"
+```
+
+Example:
+
+```bash
+python main.py "*/15 0 1,15 * 1-5 /usr/bin/find"
+```
+
+Output example:
+```
+minute         0 15 30 45
+hour           0
+day of month   1 15
+month          1 2 3 4 5 6 7 8 9 10 11 12
+day of week    1 2 3 4 5
+command /usr/bin/find
+```
+
+### Run Tests
+
+```bash
+python tests.py
 ```
