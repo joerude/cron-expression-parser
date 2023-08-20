@@ -1,0 +1,32 @@
+# Python-related files and directories
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+.idea
+.vscode
+
+# Environment and virtual environment files
+.env
+venv/
+env/
+
+# Compiled files and build artifacts
+*.exe
+*.dll
+*.so
+*.out
+*.egg-info/
+dist/
+build/
+
+# Dependency management files
+.pip_cache/
+pip-log.txt
+
+# Operating System files
+.DS_Store
+Thumbs.db
